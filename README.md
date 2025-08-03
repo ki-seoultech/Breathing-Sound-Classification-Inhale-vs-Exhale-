@@ -49,3 +49,6 @@ From these results, we found that:
 💡 **Key Insight:**  
 Deep learning models show significant performance variation depending on input data distribution.  
 To improve generalization, carefully adjusting model weights in ensembles is often more effective than relying solely on a larger number of models or simple averaging.
+
+<img width="855" height="403" alt="image" src="https://github.com/user-attachments/assets/cd249427-8640-4ecf-aa55-5b190c0b949f" />
+
