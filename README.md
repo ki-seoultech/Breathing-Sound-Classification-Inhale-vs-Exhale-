@@ -25,4 +25,27 @@ We applied Residual CNNs, hyperparameter optimization (Optuna), and ensemble lea
 
 ---
 
-## 📂 Code Structure
+## 🔍 Additional Result Analysis
+
+During final evaluation, we compared different ensemble strategies:
+
+- **Weighted Soft Voting**  
+  - Private Score: **0.78333**  
+  - Public Score: 0.77285  
+
+- **2-Model Ensemble (Trial 8 + Trial 54)**  
+  - Private Score: 0.76666  
+  - Public Score: 0.78000  
+
+- **3-Model Ensemble**  
+  - Private Score: 0.77000  
+  - Public Score: 0.77428  
+
+From these results, we found that:
+- Weighted 2-Model Ensemble achieved the **highest private test accuracy (0.78333)**.
+- Although its public score was slightly lower, it generalized better to unseen test data.
+- This highlights that **weighted voting** with proper adjustment can outperform simple averaging.
+
+💡 **Key Insight:**  
+Deep learning models show significant performance variation depending on input data distribution.  
+To improve generalization, carefully adjusting model weights in ensembles is often more effective than relying solely on a larger number of models or simple averaging.
