@@ -6,7 +6,6 @@
 #   - Optuna를 사용하여 60 Trial 하이퍼파라미터 최적화
 #   - Dropout, Learning Rate, Weight Decay, Scheduler Gamma 탐색
 #   - Validation F1 Score 기반 Best Threshold 도출
-# Author: [작성자 이름]
 # ============================================================
 
   # 동일한 모델에서 하이퍼 파라미터 최적화, optuma 60으로 best parameter 도출
